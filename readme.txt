@@ -1,2 +1,0 @@
-prakhy slay day
-hi
