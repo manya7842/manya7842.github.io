@@ -1,0 +1,20 @@
+#menu-driven program to function as a calculator
+a= int(input("Input a number \n"))
+b= int(input("Input a number \n"))
+c= input("Choose an operation: \n Addition \n Subtraction \n Multiplication \n Division \n Modulus \n Exponential Power \n Full Division \n")
+if c=="Addition":
+    print(a+b)
+elif c=="Subtraction":
+    print(a-b)
+elif c=="Multiplication":
+    print(a*b)
+elif c=="Division":
+    print(a/b)
+elif c=="Modulus":
+    print(a%b)
+elif c=="Exponential Power":
+    print(a**b)
+elif c=="Full Division":
+    print(a//b)
+elif c==" ":
+    print("Invalid Choice")
