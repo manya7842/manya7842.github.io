@@ -1,0 +1,18 @@
+#expense tracker (analyze to store and display to print, calling func in func)
+import sys
+e[]= int(input("Input your expense\n"))
+d[]= input("Input the date\n")
+m[]= input("Input the month\n")
+c[]= input("Choose a category:\t Groceries \t Personal Care & Health \t Food & Drinks \t Education \t Utilities \t Charity & Gifts \t Taxes \t Aesthetics & Leisure \t Clothing")
+print("Your data has been saved. Congratulations on displaying financial maturity!")
+ch= int(input("Press 1 to display your expense analysis. \nTo exit, press any key."))
+if(ch==1):
+    display()
+else:
+    sys.exit(0)
+void analyze(a,b):
+{
+    date= [];
+    
+
+}
