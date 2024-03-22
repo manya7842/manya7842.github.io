@@ -1,0 +1,62 @@
+#stimulates all logic gates for a variable number of inputs
+import sys
+a=int(input("Choose Logic Gate to implement:\n1: AND\n2: OR\n3: NAND\n4: NOR\n5: XOR\n6: XNOR\n"))
+n=int(input("Enter number of inputs\n"))
+arr = [0 for _ in range(n)]
+for i in range(n):
+    arr[i]= int(input("Enter the input values\n"))
+    if(arr[i]!=1 and arr[i]!=0):
+        print("Invalid Input")
+        sys.exit()
+k=0
+print("Output:\n")
+if a == 1:              #and gate
+    for i in range(n):
+        if(arr[i]==0):
+            k=k+1
+    if(k==0):
+        print("1")
+    else:
+        print("0")
+elif a == 2:            #or gate
+    for i in range(n):
+        if(arr[i]==1):
+            k=k+1
+    if(k==0):
+        print("0")
+    else:
+        print("1")
+elif a == 3:            #nand gate
+    for i in range(n):
+        if(arr[i]==0):
+            k=k+1
+    if(k==0):
+        print("0")
+    else:
+        print("1")
+elif a == 4:            #nor gate
+    for i in range(n):
+        if(arr[i]==1):
+            k=k+1
+    if(k==0):
+        print("1")
+    else:
+        print("0")
+elif a==5:              #xor
+    for i in range(n):
+        if(arr[i]==1):
+         k=k+1
+    if(k%2==0):
+        print("0")
+    else:
+        print("1")
+elif a==6:              #xnor
+    for i in range(n):
+        if(arr[i]==1):
+         k=k+1
+    if(k%2==1):
+        print("0")
+    else:
+        print("1")
+else:
+    print("Invalid case- Retry")
