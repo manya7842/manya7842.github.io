@@ -1,0 +1,8 @@
+age = int(input("Enter your age\n"))
+name= input("Enter your name\n")
+grad= int(input("Enter your graduation year\n"))
+marks= int(input("Enter your marks\n"))
+print("Age:", age)
+print("Name:", name)
+print("Graduation Year:", grad)
+print("Marks:", marks)
